@@ -2,6 +2,8 @@
 
 # sudo nano /etc/UPower/UPower.conf - edit => IgnoreLid=true
 
+# give permissions: chmod +x
+
 # default monitor is eDP-1
 MONITOR=eDP1
 
