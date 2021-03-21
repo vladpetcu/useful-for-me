@@ -1,2 +1,2 @@
-# usefull-for-me
-Usefull files
+# useful-for-me
+Useful files
