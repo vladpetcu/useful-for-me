@@ -1,13 +1,20 @@
 #!/bin/bash
 
-sudo code --install-extension eamodio.gitlens --user-data-dir="~/.vscode-root"
+declare -a user_dirs=("~/.vscode-root" "~/.vscode")
 
-sudo code --install-extension PKief.material-icon-theme --user-data-dir="~/.vscode-root"
-sudo code --install-extension esbenp.prettier-vscode --user-data-dir="~/.vscode-root"
-sudo code --install-extension michelemelluso.code-beautifier --user-data-dir="~/.vscode-root"
-sudo code --install-extension streetsidesoftware.code-spell-checker --user-data-dir="~/.vscode-root"
-sudo code --install-extension BriteSnow.vscode-toggle-quotes --user-data-dir="~/.vscode-root"
-sudo code --install-extension andys8.jest-snippets --user-data-dir="~/.vscode-root"
-sudo code --install-extension dbaeumer.vscode-eslint --user-data-dir="~/.vscode-root"
-sudo code --install-extension ms-python.vscode-pylance --user-data-dir="~/.vscode-root"
-sudo code --install-extension ms-python.python --user-data-dir="~/.vscode-root"
+for user_dir in "${user_dirs[@]}"
+do
+    sudo code --install-extension eamodio.gitlens --force --user-data-dir="$user_dir"
+
+    sudo code --install-extension PKief.material-icon-theme --force --user-data-dir="$user_dir"
+    sudo code --install-extension esbenp.prettier-vscode --force --user-data-dir="$user_dir"
+    sudo code --install-extension michelemelluso.code-beautifier --force --user-data-dir="$user_dir"
+    sudo code --install-extension streetsidesoftware.code-spell-checker --force --user-data-dir="$user_dir"
+    sudo code --install-extension BriteSnow.vscode-toggle-quotes --force --user-data-dir="$user_dir"
+    sudo code --install-extension andys8.jest-snippets --force --user-data-dir="$user_dir"
+    sudo code --install-extension dbaeumer.vscode-eslint --force --user-data-dir="$user_dir"
+    sudo code --install-extension ms-python.vscode-pylance --force --user-data-dir="$user_dir"
+    sudo code --install-extension ms-python.python --force --user-data-dir="$user_dir"
+    sudo code --install-extension ms-toolsai.jupyter --force --user-data-dir="$user_dir"
+done
+
