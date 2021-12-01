@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ExternalMonitors
+Comment=ExternalMonitors
+Exec=/path_to/external-monitors-setup.sh
+Icon=/path_to/icon.png
+Terminal=true
+Type=Application
+StartupNotify=true
