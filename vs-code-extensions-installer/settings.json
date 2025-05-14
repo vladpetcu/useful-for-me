@@ -1,0 +1,13 @@
+{
+	"workbench.colorTheme": "Abyss",
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.cursorBlinking": "expand",
+	"editor.fontFamily": "Consolas, 'Courier New', monospace",
+	"editor.fontSize": 14,
+	"editor.tabSize": 2,
+	"editor.fontLigatures": false,
+	"terminal.integrated.defaultProfile.osx": "zsh",
+	"terminal.integrated.fontSize": 14,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true
+}
